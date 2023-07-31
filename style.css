@@ -4,6 +4,21 @@
     box-sizing: border-box;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Establece el mínimo alto del body para cubrir toda la pantalla */
+  }
+  
+  main {
+    flex: 1; /* Permite que el contenido principal ocupe todo el espacio disponible en el contenedor */
+  }
+  
+  footer {
+    flex-shrink: 0; /* Evita que el footer se contraiga si hay poco contenido en el main */
+  }
+  
+
 header {
     background-color: #ededed;
 }
@@ -13,6 +28,7 @@ header h1 {
 }
 
 #mainflex{
+    margin-top: 15px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -52,4 +68,36 @@ footer{
 footer a{
     color: #a53eff;
     text-decoration: none;
+}
+
+/* Estilos personalizados para el input tipo date */
+input[type="date"] {
+    /* Cambiar el color del texto y del fondo */
+    color: #333;
+    background-color: #fff;
+    /* Establecer bordes y radios para el aspecto del input */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    /* Ajustar el tamaño del input */
+    padding: 8px;
+    width: 200px;
+    /* Eliminar los estilos predeterminados de algunos navegadores */
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+}
+
+/* Estilos personalizados para el botón */
+.custom-button {
+    /* Cambiar el color del texto y del fondo */
+    color: #fff;
+    background-color: #0c1f33; /* Azul como ejemplo */
+    /* Establecer bordes y radios para el aspecto del botón */
+    border: none;
+    border-radius: 4px;
+    /* Ajustar el tamaño del botón */
+    padding: 10px 20px;
+    /* Cambiar el cursor al pasar el mouse sobre el botón */
+    cursor: pointer;
+    /* Agregar sombra al botón */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
