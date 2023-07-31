@@ -59,6 +59,12 @@ verButton.addEventListener("click", () => {
       }
       tr.appendChild(td)
     }
+    if((i + 1) % 5 == 0){
+      const td_year = document.createElement("td")
+      td_year.textContent = String(i + 1)
+      tr.appendChild(td_year)
+    }
+    
     tbody.appendChild(tr)
   }
   console.log(matrix)
