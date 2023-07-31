@@ -70,6 +70,10 @@ footer a{
     text-decoration: none;
 }
 
+footer p{
+    margin-right: 15px;
+}
+
 /* Estilos personalizados para el input tipo date */
 input[type="date"] {
     /* Cambiar el color del texto y del fondo */
