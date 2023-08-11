@@ -8,16 +8,15 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* Establece el mínimo alto del body para cubrir toda la pantalla */
-  }
-  
-  main {
+}
+
+main {
     flex: 1; /* Permite que el contenido principal ocupe todo el espacio disponible en el contenedor */
-  }
-  
-  footer {
+}
+
+footer {
     flex-shrink: 0; /* Evita que el footer se contraiga si hay poco contenido en el main */
-  }
-  
+}
 
 header {
     background-color: #ededed;
@@ -33,6 +32,7 @@ header h1 {
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 td{
