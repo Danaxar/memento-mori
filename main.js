@@ -17,7 +17,7 @@ inputDate.addEventListener("change", () => {
   fechaNacimiento = new Date(inputDate.value)
 })
 if(fechaNacimiento == null){
-  alert('Ingresa tu fecha de nacimiento')
+  // alert('Ingresa tu fecha de nacimiento')
 }
 
 const verButton = document.querySelector("button")
@@ -51,7 +51,7 @@ verButton.addEventListener("click", () => {
     const tr = document.createElement("tr")
     for(let j = 0; j < columnas; j++){
       const td = document.createElement("td")
-      td.textContent = '0'
+      td.textContent = ' '
       if(matrix[i][j] == 1){
         td.classList.add("alive")
       }else{
