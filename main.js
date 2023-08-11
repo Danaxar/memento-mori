@@ -1,4 +1,4 @@
-const filas = 80  // Años
+const filas = 80     // Años
 const columnas = 52  // Semanas
 
 // Crear matriz
@@ -13,11 +13,13 @@ for(let i = 0; i < filas; i++){
 // Obtener la fecha de nacimiento
 const inputDate = document.querySelector("input[type='date']")
 var fechaNacimiento;
+
 inputDate.addEventListener("change", () => {
   fechaNacimiento = new Date(inputDate.value)
 })
+
 if(fechaNacimiento == null){
-  // alert('Ingresa tu fecha de nacimiento')
+  alert('Ingresa tu fecha de nacimiento')
 }
 
 const verButton = document.querySelector("button")
@@ -41,6 +43,7 @@ verButton.addEventListener("click", () => {
 
   // Modificar la tabla en el dom
   const table = document.getElementById("table")
+  
   // Quitar tbody si existe
   if(table.children.length > 0){
     table.removeChild(table.children[0])
